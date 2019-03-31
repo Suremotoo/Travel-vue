@@ -1,6 +1,6 @@
 # travel-vue
 
-> A Vue.js project
+> 项目练习：用vue实现旅游项目
 
 ## Build Setup
 
