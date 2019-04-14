@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        title: '沈阳方特欢乐世界',
-        desc: '被誉为“东方梦幻乐园”、“亚洲科幻神奇”',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1904/f4/f47635631020932ca3.water.jpg_200x200_275db91f.jpg'
-      }, {
-        id: '0002',
-        title: '皇家海洋公园',
-        desc: '被誉为“东方梦幻乐园”、“亚洲科幻神奇”',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/fa/fa88b1059e9cbd7ea3.img.jpg_200x200_48780e48.jpg'
-      }, {
-        id: '0003',
-        title: '热高乐园丛林公园',
-        desc: '被誉为“东方梦幻乐园”、“亚洲科幻神奇”',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/3a/1863c41f4e516418d949a6e5b5fc3316.water.jpg_200x200_79dd8a8b.jpg'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
