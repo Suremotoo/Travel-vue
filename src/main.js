@@ -7,6 +7,9 @@ import router from './router'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+import store from './store'
+
+// 统一css
 import 'styles/reset.css'
 // border.css 用于解决高倍屏手机1像素的问题
 import 'styles/border.css'
@@ -20,6 +23,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
