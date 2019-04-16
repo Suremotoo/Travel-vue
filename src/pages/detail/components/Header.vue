@@ -38,10 +38,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     document.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  destoryed () {
     document.removeEventListener('scroll', this.handleScroll)
   }
 }

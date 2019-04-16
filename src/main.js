@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 用于解决某些浏览器打开白屏的问题
+import 'babel-polyfill'
 // fastclick 用于解决移动端点击延迟3毫秒的问题
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
