@@ -3,19 +3,22 @@
     <div class="banner" @click="handleShowGallary">
       <img class="banner-img" :src="bannerImg">
       <div class="banner-info">
-        <div class="banner-title">{{sightName}}</div>
+        <div class="banner-title">{{this.sightName}}</div>
         <div class="banner-num">
           <span class="iconfont banner-icon">&#xe692;</span>
-          11
+          {{this.imgs.length}}
         </div>
       </div>
     </div>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="handleCloseGallary"></common-gallary>
+    <fade-animation>
+      <common-gallary :imgs="imgs" v-show="showGallary" @close="handleCloseGallary"></common-gallary>
+    </fade-animation>
   </div>
 </template>
 
 <script>
 import CommonGallary from 'common/gallary/Gallary'
+import FadeAnimation from 'common/animation/fade/FadeAnimation'
 
 export default {
   name: 'DetailBanner',
@@ -38,7 +41,8 @@ export default {
     }
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    FadeAnimation
   }
 }
 </script>
